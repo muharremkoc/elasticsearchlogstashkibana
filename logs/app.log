@@ -1,0 +1,127 @@
+2021-08-27 15:57:42.779  INFO  [logStarting] org.springframework.boot.StartupInfoLogger : Starting ElasticsearchlogstashkibanaApplication using Java 11.0.11 on DESKTOP-L2R51GG with PID 12580 (C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana\target\classes started by Detay in C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana)
+2021-08-27 15:57:42.802  INFO  [logStartupProfileInfo] org.springframework.boot.SpringApplication : No active profile set, falling back to default profiles: default
+2021-08-27 15:57:49.016  WARN  [openEntityManagerInViewInterceptor] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-27 15:57:50.576  INFO  [logStarted] org.springframework.boot.StartupInfoLogger : Started ElasticsearchlogstashkibanaApplication in 8.618 seconds (JVM running for 12.008)
+2021-08-27 16:08:13.914  INFO  [createUser] com.elk.elasticsearchlogstashkibana.service.UserServiceImpl : User(id=1, firstName=Muharrem, lastName=Koc, dateOfBirth=21 April 2000)Added
+2021-08-27 16:10:28.122 ERROR  [createPoolEntry]        com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.checkSuspended(Session.java:1369) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.transitionToState(Session.java:1361) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.waitIfExclusiveModeEnabled(Session.java:1633) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeQuery(Command.java:186) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:631) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) [HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) [HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) [HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) [HikariCP-4.0.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:836) [?:?]
+2021-08-27 16:10:28.325  WARN  [destroy] org.springframework.beans.factory.support.DisposableBeanAdapter : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-08-27 16:15:55.808  INFO  [logStarting] org.springframework.boot.StartupInfoLogger : Starting ElasticsearchlogstashkibanaApplication using Java 11.0.11 on DESKTOP-L2R51GG with PID 12500 (C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana\target\classes started by Detay in C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana)
+2021-08-27 16:15:55.890  INFO  [logStartupProfileInfo] org.springframework.boot.SpringApplication : No active profile set, falling back to default profiles: default
+2021-08-27 16:16:02.762  WARN  [openEntityManagerInViewInterceptor] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-27 16:16:04.419  INFO  [logStarted] org.springframework.boot.StartupInfoLogger : Started ElasticsearchlogstashkibanaApplication in 9.967 seconds (JVM running for 13.654)
+2021-08-27 16:16:56.635 ERROR  [exception] com.elk.elasticsearchlogstashkibana.controller.UserController : java.lang.Exception: Exception has occured....
+2021-08-27 16:35:59.256  WARN  [destroy] org.springframework.beans.factory.support.DisposableBeanAdapter : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-08-27 16:36:27.157  INFO  [logStarting] org.springframework.boot.StartupInfoLogger : Starting ElasticsearchlogstashkibanaApplication using Java 11.0.11 on DESKTOP-L2R51GG with PID 12500 (C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana\target\classes started by Detay in C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana)
+2021-08-27 16:36:27.161  INFO  [logStartupProfileInfo] org.springframework.boot.SpringApplication : No active profile set, falling back to default profiles: default
+2021-08-27 16:36:29.685  WARN  [openEntityManagerInViewInterceptor] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-27 16:36:30.934  INFO  [logStarted] org.springframework.boot.StartupInfoLogger : Started ElasticsearchlogstashkibanaApplication in 4.51 seconds (JVM running for 1240.169)
+2021-08-27 16:36:40.243  WARN  [destroy] org.springframework.beans.factory.support.DisposableBeanAdapter : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-08-27 16:36:40.917  INFO  [logStarting] org.springframework.boot.StartupInfoLogger : Starting ElasticsearchlogstashkibanaApplication using Java 11.0.11 on DESKTOP-L2R51GG with PID 12500 (C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana\target\classes started by Detay in C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana)
+2021-08-27 16:36:40.958  INFO  [logStartupProfileInfo] org.springframework.boot.SpringApplication : No active profile set, falling back to default profiles: default
+2021-08-27 16:36:44.529  WARN  [openEntityManagerInViewInterceptor] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-27 16:36:45.778  INFO  [logStarted] org.springframework.boot.StartupInfoLogger : Started ElasticsearchlogstashkibanaApplication in 5.36 seconds (JVM running for 1255.012)
+2021-08-27 16:36:49.059  WARN  [destroy] org.springframework.beans.factory.support.DisposableBeanAdapter : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-08-27 16:36:49.576  INFO  [logStarting] org.springframework.boot.StartupInfoLogger : Starting ElasticsearchlogstashkibanaApplication using Java 11.0.11 on DESKTOP-L2R51GG with PID 12500 (C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana\target\classes started by Detay in C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana)
+2021-08-27 16:36:49.581  INFO  [logStartupProfileInfo] org.springframework.boot.SpringApplication : No active profile set, falling back to default profiles: default
+2021-08-27 16:36:51.183  WARN  [openEntityManagerInViewInterceptor] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-27 16:36:52.077  INFO  [logStarted] org.springframework.boot.StartupInfoLogger : Started ElasticsearchlogstashkibanaApplication in 2.709 seconds (JVM running for 1261.312)
+2021-08-27 16:36:55.232  WARN  [destroy] org.springframework.beans.factory.support.DisposableBeanAdapter : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-08-27 16:36:55.432  INFO  [logStarting] org.springframework.boot.StartupInfoLogger : Starting ElasticsearchlogstashkibanaApplication using Java 11.0.11 on DESKTOP-L2R51GG with PID 12500 (C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana\target\classes started by Detay in C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana)
+2021-08-27 16:36:55.435  INFO  [logStartupProfileInfo] org.springframework.boot.SpringApplication : No active profile set, falling back to default profiles: default
+2021-08-27 16:36:57.518  WARN  [openEntityManagerInViewInterceptor] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-27 16:36:58.406  INFO  [logStarted] org.springframework.boot.StartupInfoLogger : Started ElasticsearchlogstashkibanaApplication in 3.113 seconds (JVM running for 1267.641)
+2021-08-27 16:36:58.744  INFO  [logStarting] org.springframework.boot.StartupInfoLogger : Starting ElasticsearchlogstashkibanaApplicationTests using Java 11.0.11 on DESKTOP-L2R51GG with PID 13152 (started by Detay in C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana)
+2021-08-27 16:36:58.769  INFO  [logStartupProfileInfo] org.springframework.boot.SpringApplication : No active profile set, falling back to default profiles: default
+2021-08-27 16:37:07.447  WARN  [openEntityManagerInViewInterceptor] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-27 16:37:10.321  INFO  [logStarted] org.springframework.boot.StartupInfoLogger : Started ElasticsearchlogstashkibanaApplicationTests in 12.511 seconds (JVM running for 16.906)
+2021-08-27 16:38:33.255  WARN  [destroy] org.springframework.beans.factory.support.DisposableBeanAdapter : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-08-27 16:39:10.786  INFO  [logStarting] org.springframework.boot.StartupInfoLogger : Starting ElasticsearchlogstashkibanaApplication using Java 11.0.11 on DESKTOP-L2R51GG with PID 12500 (C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana\target\classes started by Detay in C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana)
+2021-08-27 16:39:10.805  INFO  [logStartupProfileInfo] org.springframework.boot.SpringApplication : No active profile set, falling back to default profiles: default
+2021-08-27 16:39:12.389  WARN  [openEntityManagerInViewInterceptor] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-27 16:39:13.000  INFO  [logStarted] org.springframework.boot.StartupInfoLogger : Started ElasticsearchlogstashkibanaApplication in 2.484 seconds (JVM running for 1402.235)
+2021-08-27 16:39:17.982  WARN  [destroy] org.springframework.beans.factory.support.DisposableBeanAdapter : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-08-27 16:39:18.382  INFO  [logStarting] org.springframework.boot.StartupInfoLogger : Starting ElasticsearchlogstashkibanaApplication using Java 11.0.11 on DESKTOP-L2R51GG with PID 12500 (C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana\target\classes started by Detay in C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana)
+2021-08-27 16:39:18.384  INFO  [logStartupProfileInfo] org.springframework.boot.SpringApplication : No active profile set, falling back to default profiles: default
+2021-08-27 16:39:19.527  WARN  [openEntityManagerInViewInterceptor] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-27 16:39:20.660  INFO  [logStarted] org.springframework.boot.StartupInfoLogger : Started ElasticsearchlogstashkibanaApplication in 2.394 seconds (JVM running for 1409.895)
+2021-08-27 16:41:18.693 ERROR  [createPoolEntry]        com.zaxxer.hikari.pool.HikariPool : HikariPool-9 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.checkSuspended(Session.java:1369) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.transitionToState(Session.java:1361) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.waitIfExclusiveModeEnabled(Session.java:1633) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeQuery(Command.java:186) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:631) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) [HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) [HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) [HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) [HikariCP-4.0.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:836) [?:?]
+2021-08-27 16:41:18.900  WARN  [destroy] org.springframework.beans.factory.support.DisposableBeanAdapter : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-08-27 16:47:49.206  INFO  [logStarting] org.springframework.boot.StartupInfoLogger : Starting ElasticsearchlogstashkibanaApplication using Java 11.0.11 on DESKTOP-L2R51GG with PID 3876 (C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana\target\classes started by Detay in C:\Users\Detay\Desktop\Java\elasticsearchlogstashkibana)
+2021-08-27 16:47:49.226  INFO  [logStartupProfileInfo] org.springframework.boot.SpringApplication : No active profile set, falling back to default profiles: default
+2021-08-27 16:47:55.327  WARN  [openEntityManagerInViewInterceptor] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-27 16:47:57.004  INFO  [logStarted] org.springframework.boot.StartupInfoLogger : Started ElasticsearchlogstashkibanaApplication in 10.129 seconds (JVM running for 13.93)
+2021-08-27 16:48:07.810 ERROR  [exception] com.elk.elasticsearchlogstashkibana.controller.UserController : java.lang.Exception: Exception has occured....
+2021-08-27 16:50:30.173  INFO  [getOpenApi] org.springdoc.api.AbstractOpenApiResource : Init duration for springdoc-openapi is: 543 ms
+2021-08-27 16:50:54.066  INFO  [createUser] com.elk.elasticsearchlogstashkibana.service.UserServiceImpl : User(id=1, firstName=Muharrem, lastName=Koc, dateOfBirth=21 April 2000)Added
+2021-08-27 16:51:32.394  INFO  [getUser] com.elk.elasticsearchlogstashkibana.service.UserServiceImpl : Request for the id =[1]
+2021-08-27 16:51:32.411  INFO  [getUser] com.elk.elasticsearchlogstashkibana.service.UserServiceImpl : Optional[User(id=1, firstName=Muharrem, lastName=Koc, dateOfBirth=21 April 2000)] data selected
+2021-08-27 16:52:11.202  INFO  [getUser] com.elk.elasticsearchlogstashkibana.service.UserServiceImpl : Request for the id =[1]
+2021-08-27 16:52:11.204  INFO  [getUser] com.elk.elasticsearchlogstashkibana.service.UserServiceImpl : Optional[User(id=1, firstName=Muharrem, lastName=Koc, dateOfBirth=21 April 2000)] data selected
+2021-08-27 16:55:37.059 ERROR  [createPoolEntry]        com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:170) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.checkSuspended(Session.java:1369) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.transitionToState(Session.java:1361) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.waitIfExclusiveModeEnabled(Session.java:1633) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeQuery(Command.java:186) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:631) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) [HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) [HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) [HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) [HikariCP-4.0.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:836) [?:?]
+2021-08-27 16:55:37.260  WARN  [destroy] org.springframework.beans.factory.support.DisposableBeanAdapter : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
